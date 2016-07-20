@@ -1,6 +1,5 @@
 package com.example.administrator.asdasdasd;
 
-import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -40,5 +39,12 @@ public class MainActivity extends AppCompatActivity {
     }
     public View getContentView() {
         return ((ViewGroup) MainActivity.this.findViewById(android.R.id.content)).getChildAt(0);
+    }
+
+
+
+    public void gewala(View view){
+        Intent intent=new Intent(this,FlyCircleActivity.class);
+        startActivity(intent);
     }
 }
